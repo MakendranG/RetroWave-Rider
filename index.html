@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroWave Rider</title>
+    <link rel="stylesheet" href="retrowave-style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="hud">
+            <div class="score">SCORE: <span id="score">0</span></div>
+            <div class="lives">LIVES: <span id="lives">3</span></div>
+            <div class="data-packets">DATA: <span id="data-packets">0</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="controls-info">
+            <p>ARROWS: Move | SPACE: Boost | P: Pause</p>
+        </div>
+    </div>
+    <div class="game-overlay" id="startScreen">
+        <div class="game-title">
+            <h1>RETROWAVE RIDER</h1>
+            <div class="neon-btn" id="startBtn">START GAME</div>
+            <p class="instructions">Drive through the neon city.<br>Collect data packets. Avoid obstacles.</p>
+        </div>
+    </div>
+    <div class="game-overlay" id="gameOverScreen" style="display: none;">
+        <div class="game-title">
+            <h1>GAME OVER</h1>
+            <div class="score-display">SCORE: <span id="finalScore">0</span></div>
+            <div class="neon-btn" id="restartBtn">PLAY AGAIN</div>
+        </div>
+    </div>
+
+    <script src="retrowave-game.js"></script>
+</body>
+</html>
